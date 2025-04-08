@@ -138,6 +138,9 @@ nav .fa-bars {
   background: transparent;
   width: 100%;
 }
+.button-wrapper {
+  margin-left: auto;
+}
 .search-bar .submit {
   position: relative;
   display: inline-block;
