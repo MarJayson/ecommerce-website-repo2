@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <!-------------------------------------------------------------------------------------------- FONT-AWESOME-LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-------------------------------------------------------------------------------------------- GOOGLE-FONT-LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>StayNest</title>
+  </head>
+  <body>
+    <!-------------------------------------------------------------------------------------------- NAVBAR-->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <img src="../images/logo.png" alt="StayNest Logo" class="nav-img" />
+        <span class="nav-title">StayNest</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+      <a class="register-btn" href="../html files/register.html">Book Now!</a>
+
+      <i
+        class="fa-solid fa-bars"
+        style="color: #ff5361"
+        onclick="togglebtn()"
+      ></i>
+    </nav>
+    <!-------------------------------------------------------------------------------------------- CONTACT-SECTION-->
+    <section id="contact-us-section">
+      <h2 class="contact-title">How Can We Help?</h2>
+      <div class="contact-content">
+        <div class="contact-container">
+          <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>
+              Need assistance with your booking, account, or any other
+              inquiries? Our support team is here to help.
+            </p>
+            <form class="contact-form2">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              /><br />
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              /><br />
+              <label for="issue">Select an Issue</label>
+              <select id="issue" required>
+                <option value="booking">Booking Issue</option>
+                <option value="account">Account Problem</option>
+                <option value="host">Hosting Inquiry</option>
+                <option value="other">Other</option></select
+              ><br />
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                placeholder="Describe your issue"
+                rows="5"
+                required
+              ></textarea
+              ><br />
+
+              <button class="btn-message">Submit Request</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h2>Support & Contact</h2>
+            <p>
+              Visit our <a href="#">Help Center</a> for answers to common
+              questions, or contact us directly.
+            </p>
+            <p>
+              <strong>Phone Support:</strong> <br />
+              +1-855-424-7262 (U.S.) | +44 203 318 1111 (UK)
+            </p>
+            <p>
+              <strong>Email:</strong> <br />
+              support@airbnb.com
+            </p>
+            <p>
+              <strong>Headquarters:</strong> <br />
+              888 Brannan St, San Francisco, CA 94103, USA
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------- FOOTER -->
+    <footer id="footer-section">
+      <div class="footer-links">
+        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        <hr />
+        <p>Copyright &#169; All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-------------------------------------------------------------------------------------------- FONT-AWESOME-LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-------------------------------------------------------------------------------------------- GOOGLE-FONT-LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>StayNest</title>
+  </head>
+  <body>
+    <div id="home-section">
+      <!-------------------------------------------------------------------------------------------- NAVBAR -->
+      <nav id="navbar">
+        <div class="nav-logo">
+          <img src="./images/logo.png" alt="" class="nav-img" />
+          <span class="nav-title">StayNest</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="./html files/aboutus.html">About Us</a></li>
+          <li><a href="#popular-section">Popular Places</a></li>
+          <li><a href="#exclusives-section">Online Packages</a></li>
+          <li><a href="./html files/contactus.html">Contact Us</a></li>
+        </ul>
+        <a class="register-btn" href="./html files/register.html">Book Now!</a>
+
+        <i
+          class="fa-solid fa-bars"
+          style="color: #ff5361"
+          onclick="togglebtn()"
+        ></i>
+      </nav>
+      <!-------------------------------------------------------------------------------------------- HERO-SECTION -->
+      <section id="hero-section">
+        <h1>Your Next Adventure Awaits</h1>
+        <div class="search-bar">
+          <form action="#">
+            <div>
+              <label for="location">Location</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Where are you going?"
+                required
+              />
+            </div>
+            <div>
+              <label for="check-in">Check-in</label>
+              <input type="date" name="check-in" id="check-in" required />
+            </div>
+            <div>
+              <label for="check-out">Check-out</label>
+              <input type="date" name="check-out" id="check-out" required />
+            </div>
+            <div>
+              <label for="guests">Guests</label>
+              <input
+                type="number"
+                name="guests"
+                id="guests"
+                placeholder="Number of guests"
+                min="1"
+                required
+              />
+            </div>
+            <div class="button-wrapper">
+              <button class="submit" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!-------------------------------------------------------------------------------------------- EXCLUSIVES-SECTION -->
+    <section id="exclusives-section">
+      <h2 class="exclusives-title">🗺️ Exclusives Offers</h2>
+      <div class="exclusives-img">
+        <div class="card">
+          <img src="./images/amsterdam.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Amsterdam</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/australia.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Australia</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/france.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>France</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/japan.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Japan</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/new zealand.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>New Zealand</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/philippines.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Philippines</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/south korea.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>South Korea</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/switzerland.png" alt="" />
+          <div class="card-img-overlay">
+            <h3>Switzerland</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/greece.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Greece</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/thailand.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Thailand</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/uk.png" alt="" />
+          <div class="card-img-overlay">
+            <h3>United Kingdom</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/spain.jpg" alt="" />
+          <div class="card-img-overlay">
+            <h3>Spain</h3>
+            <p>Starts @ $500</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------- POPULAR-SECTION -->
+    <section id="popular-section">
+      <h2 class="exclusives-title">🔍 Popular Destinations</h2>
+      <div class="popular-img">
+        <div class="popular-card">
+          <img src="./images/paris.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Paris, France</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/kyoto.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Kyoto, Japan</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/rome.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Rome, Italy</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/new york.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>New York, USA</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/sydney.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Sydney, Australia</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/dubai.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Dubai, UAE</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/soul.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Soul, South Korea</h3>
+          </div>
+        </div>
+        <div class="popular-card">
+          <img src="./images/palawan.jpg" alt="" />
+          <div class="popular-subtitle">
+            <h3>Palawan, Philippines</h3>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <h3>Earn from Your Space</h3>
+        <p>
+          Have an extra room or property? <br />
+          Start hosting and earn effortlessly!
+        </p>
+        <a href="" class="cta-btn">know more</a>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------- TESTIMONIAL-SECTION -->
+    <section id="testimonial-section">
+      <h2 class="exclusives-title">Travellers Stories</h2>
+      <div class="testimonial-body">
+        <div class="testimonials">
+          <div class="testimonial-img"></div>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <div>
+                <h3 class="testimonial-name">John Doe</h3>
+                <p class="testimonial-sub-title">
+                  "My trip to Bali was nothing short of magical. The sunsets on
+                  the beaches, the vibrant culture, and the incredible food made
+                  every moment unforgettable. I can’t wait to return to explore
+                  more of the island's hidden gems!"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-msg">
+        <h2 class="exclusives-title">About StayNest</h2>
+        <p>
+          StayNest is a platform that connects travelers with unique and
+          comfortable accommodations around the world. Whether you're looking
+          for a cozy apartment, a luxury villa, or an adventurous treehouse,
+          StayNest offers a wide range of options to suit every traveler's
+          needs.
+        </p>
+        <p>
+          Our mission is to make travel more personal, affordable, and memorable
+          by offering stays hosted by real people. With a seamless booking
+          process, verified listings, and a trusted community, you can explore
+          new destinations with peace of mind.
+        </p>
+        <p>
+          From weekend getaways to long-term stays, StayNest is here to make
+          your journey unforgettable. Find your perfect stay today!
+        </p>
+      </div>
+    </section>
+    <footer id="footer-section">
+      <div class="footer-links">
+        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        <hr />
+        <p>Copyright &#169; All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <!-------------------------------------------------------------------------------------------- FONT-AWESOME-LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-------------------------------------------------------------------------------------------- GOOGLE-FONT-LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>StayNest</title>
+  </head>
+  <body>
+    <!-------------------------------------------------------------------------------------------- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <img src="../images/logo.png" alt="" class="nav-img" />
+        <span class="nav-title">StayNest</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+
+      <i
+        class="fa-solid fa-bars"
+        style="color: #ff5361"
+        onclick="togglebtn()"
+      ></i>
+    </nav>
+    <!-------------------------------------------------------------------------------------------- REGISTER-SECTION-->
+    <section id="register-section">
+      <h1 class="contact-title">Plan Your Stay!</h1>
+      <div class="register-form">
+        <div class="register-form-text">
+          <h1>Book Now!</h1>
+          <p>
+            Secure your perfect stay with us. Fill out the form below and book
+            your trip today!
+          </p>
+        </div>
+        <div class="register-main-form">
+          <form action="">
+            <div>
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div>
+              <label for="check-in">Check-in Date</label>
+              <input type="date" name="checkin" id="checkin" required />
+            </div>
+            <div>
+              <label for="check-out">Check-out Date</label>
+              <input type="date" name="checkout" id="checkout" required />
+            </div>
+            <div>
+              <label for="guest">Number of Guests</label>
+              <input
+                type="number"
+                name="guests"
+                id="guests"
+                placeholder="Number of guests"
+                required
+              />
+            </div>
+            <div>
+              <button class="register-btn2" type="submit">Submit Now!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------- FOOTER -->
+    <footer id="footer-section">
+      <div class="footer-links">
+        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        <hr />
+        <p>Copyright &#169; All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+@media screen and (min-width: 768px) and (max-width: 1270px) {
+  /*************************************************************************************************** NAVBAR */
+  .nav-logo {
+    position: fixed;
+    top: 1rem;
+    left: 3.5rem;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    text-align: right;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  nav .nav-links li {
+    margin: 13px 0;
+    display: block;
+  }
+  .register-btn {
+    margin: 15px 0 30px;
+    display: inline-block;
+  }
+  nav .fa-bars {
+    display: block;
+    position: fixed;
+    top: 2.5rem;
+    right: 3.5rem;
+    font-size: 28px;
+  }
+  .hidemenu {
+    max-height: 400px;
+  }
+
+  /********************************************************************************************* HERO-SECTION */
+
+  #hero-section {
+    padding: 0 5%;
+  }
+  #hero-section h1 {
+    padding-top: 150px;
+    font-size: 2.8rem;
+  }
+  .search-bar {
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px 10px 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .search-bar form {
+    display: block;
+  }
+  .search-bar form input {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 20px;
+    padding-bottom: 10px;
+  }
+  .search-bar .submit {
+    margin: auto;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  /**************************************************************************************** EXCLUSIVES-SECTION  */
+
+  .exclusives-title {
+    font-size: 2rem;
+  }
+  .cta h3 {
+    font-size: 2.8rem;
+  }
+
+  /******************************************************************************************* TESTIMONIAL-SECTION */
+
+  .about-msg {
+    padding: 40px 15px;
+    margin: 60px 10px;
+  }
+
+  .about-msg p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  /******************************************************************************************* ABOUT-SECTION */
+
+  .content h1 {
+    padding-top: 220px;
+    font-size: 3.7rem;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img img {
+    max-width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+  }
+
+  /******************************************************************************************* CONTACT-SECTION */
+
+  .contact-title {
+    padding-top: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /*************************************************************************************************** NAVBAR */
+
+  .nav-logo {
+    position: fixed;
+    top: 1rem;
+    left: 3.5rem;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    text-align: right;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  nav .nav-links li {
+    margin: 13px 0;
+    display: block;
+  }
+  .register-btn {
+    margin: 15px 0 30px;
+    display: inline-block;
+  }
+  nav .fa-bars {
+    display: block;
+    position: fixed;
+    top: 2.5rem;
+    right: 3.5rem;
+    font-size: 28px;
+  }
+  .hidemenu {
+    max-height: 400px;
+  }
+
+  /********************************************************************************************* HERO-SECTION */
+
+  #hero-section {
+    padding: 0 1%;
+  }
+  #hero-section h1 {
+    padding-top: 150px;
+    font-size: 2.2rem;
+  }
+  .search-bar {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px 10px 30px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .search-bar form {
+    display: block;
+  }
+  .search-bar form input {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 20px;
+    padding-bottom: 10px;
+  }
+  .search-bar .submit {
+    margin: auto;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  /**************************************************************************************** EXCLUSIVES-SECTION  */
+
+  .exclusives-title {
+    font-size: 1.8rem;
+  }
+  .cta h3 {
+    font-size: 2.5rem;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonials p {
+    font-size: 1.3rem;
+  }
+
+  .about-msg {
+    padding: 20px 10px;
+    margin: 30px 0;
+  }
+  .about-msg p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  /******************************************************************************************* ABOUT-SECTION */
+
+  .content h1 {
+    padding-top: 220px;
+    font-size: 2.5rem;
+  }
+  .about-description h2,
+  .why-choose-us h2 {
+    font-size: 1.7rem;
+  }
+  .our-story h3 {
+    font-size: 1.7rem;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  /******************************************************************************************* CONTACT-SECTION */
+
+  .contact-title {
+    padding-top: 5rem;
+    font-size: 1.8rem;
+  }
+}
